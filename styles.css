@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--background);
+  background-color: var(--yellow);
 }
 
 h1 {
@@ -37,31 +37,20 @@ section {
   flex-direction: row;
   align-items: center;
   width: 100%;
+  background-color: var(--grey);
+  color: var(--yellow);
 }
 
 img {
-  width: 66%;
+  width: 63%;
   aspect-ratio: calc(4 / 3);
   object-fit: cover;
 }
 
-#grey-section {
-  background-color: var(--grey);
-  color: var(--yellow);
-}
-
-#castle-section {
-  background-color: var(--grey);
-  color: var(--yellow);
-}
-
-#productions-section {
-  background-color: var(--grey);
-  color: var(--yellow);
-}
-
 #new-queer-section {
   font-family: "Inter", sans-serif;
+  background-color: #e6eaed;
+  color: #67724b;
 }
 
 #new-queer-section h2 {
