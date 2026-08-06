@@ -47,6 +47,18 @@ img {
   object-fit: cover;
 }
 
+#grey-section {
+  background-color: #5e798e;
+}
+
+#castle-section {
+  background-color: #6945a7;
+}
+
+#productions-section {
+  background-color: #76625d;
+}
+
 #new-queer-section {
   font-family: "Inter", sans-serif;
   background-color: var(--green);
