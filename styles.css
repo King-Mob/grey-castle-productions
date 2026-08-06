@@ -30,7 +30,7 @@ h1 {
 }
 
 #productions {
-  font-size: 16vw;
+  font-size: 17vw;
 }
 
 h2 {
@@ -40,8 +40,8 @@ h2 {
   text-align: center;
   margin: 0;
   padding: 10px 0px;
-  background-color: var(--secondary-background);
-  color: var(--secondary-text);
+  background-color: #c3c3c3;
+  color: #000000;
 }
 
 section {
