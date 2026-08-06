@@ -52,8 +52,7 @@ section {
 }
 
 img {
-  flex: 1;
   width: 50%;
-  aspect-ratio: 0.5;
+  aspect-ratio: calc(4 / 3);
   object-fit: cover;
 }
