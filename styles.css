@@ -124,10 +124,6 @@ section {
   width: 20%;
 }
 
-#turret-notch-row {
-  background-color: var(--sky);
-}
-
 #tower {
   width: 90%;
   display: flex;
@@ -139,14 +135,12 @@ section {
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: black;
 }
 
 .even-row {
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: black;
 }
 
 .brick {
