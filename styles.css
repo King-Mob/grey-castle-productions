@@ -3,74 +3,195 @@ html {
   --yellow: #fdee9d;
   --green: #3f8e68;
   --blue: #cfc1ff;
-  --title: "Inter";
-  --body: "Exo";
+  --title: "Modern Antiqua";
+  --body: "Oldenburg";
+  --sky: #d7eaff;
 }
 
 body {
   margin: 0;
-  background-color: var(--yellow);
+  background-color: var(--sky);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-  font-family: var(--title), sans-serif;
+  font-family: var(--title), serif;
   font-weight: bold;
-  margin: 0;
+  margin: 10px 0px;
   width: 100%;
   text-align: center;
+  font-size: 30px;
 }
 
 #grey {
-  font-size: 14vw;
+  font-size: 60px;
 }
 
 #castle {
-  font-size: 10vw;
+  font-size: 50px;
 }
 
 #productions {
-  font-size: 5.5vw;
+  font-size: 26px;
+}
+
+.divider {
+  display: block;
+  height: 1px;
+  background-color: var(--yellow);
+  width: 80%;
+  margin: 5px 0px;
+}
+
+h2 {
+  font-family: var(--title), serif;
+  font-weight: normal;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+#banner {
+  position: absolute;
+  top: 160px;
+  left: 20%;
+  z-index: 1;
+  width: 60%;
+}
+
+#slit {
+  width: 10px;
+  height: 160px;
+  background: black;
+  clip-path: polygon(
+    5px 0,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 5px) 100%,
+    0 calc(100% - 10px),
+    0 10px
+  );
+  position: relative;
+  z-index: -1;
+}
+
+#pole {
+  width: 105%;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    rgba(99, 59, 59, 0) 0px,
+    rgba(99, 59, 59, 1) 6px
+  );
+  margin-top: -135px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
   background-color: var(--grey);
   color: var(--yellow);
+  margin-left: calc(5% + 5px);
+  border-radius: 0px 0px 15px 15px;
+  border: solid 2px var(--yellow);
 }
 
-img {
-  width: 63%;
-  aspect-ratio: calc(4 / 3);
-  object-fit: cover;
+#turret {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
 }
 
-#new-queer-section {
-  font-family: "Inter", sans-serif;
-  background-color: #e6eaed;
-  color: #67724b;
+#battlements {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
-#new-queer-section h2 {
-  font-family: var(--title);
-  font-size: 9vw;
-  font-weight: bold;
-  text-align: left;
-  margin: 0px 5px;
+.battlement {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
 }
 
-#text-section {
-  background-color: var(--grey);
-  font-family: var(--body), sans-serif;
-  align-items: start;
+#turret-notch-row {
+  background-color: var(--sky);
 }
 
-#text-section p {
-  margin: 0;
-  padding: 5px;
-  font-size: 4vw;
-  background-color: var(--yellow);
-  color: var(--grey);
+#tower {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.odd-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+
+.even-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+
+.brick {
+  flex: 2;
+  height: 40px;
+  background-color: #8a8a86;
+  background-image:
+    /* mottled patches of lighter/darker stone */
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.08) 0%,
+      transparent 40%
+    ),
+    radial-gradient(circle at 75% 70%, rgba(0, 0, 0, 0.15) 0%, transparent 45%),
+    radial-gradient(
+      circle at 60% 20%,
+      rgba(255, 255, 255, 0.05) 0%,
+      transparent 35%
+    ),
+    radial-gradient(circle at 30% 80%, rgba(0, 0, 0, 0.12) 0%, transparent 40%),
+    /* fine grain noise using repeating gradients */
+    repeating-linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.03) 0px,
+        rgba(0, 0, 0, 0.03) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+  box-shadow:
+    inset 0 0 15px rgba(0, 0, 0, 0.4),
+    /* darkened, worn edges */ inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    /* subtle top-left highlight */ 0 3px 6px rgba(0, 0, 0, 0.5); /* grounding shadow */
+  position: relative;
+}
+
+.half {
+  flex: 1;
+}
+
+.notch-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 7px 100%, 0 calc(100% - 7px));
+}
+
+.notch-right {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 7px),
+    calc(100% - 7px) 100%,
+    0 100%
+  );
 }
