@@ -10,7 +10,11 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--sky);
+  background: linear-gradient(
+    to bottom,
+    rgb(196 215 255),
+    rgb(221 238 255) 200px
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,6 +180,26 @@ section {
     /* darkened, worn edges */ inset 2px 2px 4px rgba(255, 255, 255, 0.1),
     /* subtle top-left highlight */ 0 3px 6px rgba(0, 0, 0, 0.5); /* grounding shadow */
   position: relative;
+}
+
+.crack::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      105deg,
+      transparent 48%,
+      rgba(0, 0, 0, 0.2) 49%,
+      transparent 51%
+    ),
+    linear-gradient(
+      20deg,
+      transparent 70%,
+      rgba(0, 0, 0, 0.15) 71%,
+      transparent 73%
+    );
+  border-radius: inherit;
 }
 
 .half {
