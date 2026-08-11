@@ -22,7 +22,7 @@ header:before {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 65%;
+  height: 120vw;
   filter: blur(2px);
 }
 
