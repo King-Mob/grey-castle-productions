@@ -18,7 +18,7 @@ header:before {
   z-index: -1;
 
   display: block;
-  background-image: url("./assets/lenny-lead.jpg");
+  background-image: url("./assets/small/lenny-lead.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
