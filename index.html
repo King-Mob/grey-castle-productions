@@ -21,9 +21,35 @@
         <img src="./assets/small/rhl-lead.jpg" id="rhl">
         <img src="./assets/small/two-tribes-lead.jpg" id="two-tribes">
         <img src="./assets/small/lenny-lead.jpg" id="lenny">
+        <div id="menu" class="invisible">
+            <a>
+                <h3>Current Projects</h3>
+            </a>
+            <a>
+                <h3>About</h3>
+            </a>
+            <a>
+                <h3>Contact</h3>
+            </a>
+        </div>
     </header>
 
+    <button id="menu-button" alt="open menu">
+
+    </button>
+
     <h2 id="slogan">New-writing Platforming Queer Stories</h2>
+
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
 
 </body>
 

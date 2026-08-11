@@ -23,11 +23,14 @@ header {
 
 header img {
   height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   animation: carousel 20s infinite;
   opacity: 0;
   z-index: -1;
+  object-fit: cover;
+  object-position: center;
 }
 
 @keyframes carousel {
@@ -91,7 +94,7 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 10px 0px;
-  background-color: #15364b;
+  background-color: #15364b61;
   color: #ffffff;
   position: absolute;
   bottom: 0;
@@ -105,8 +108,34 @@ section {
   height: 50%;
 }
 
-img {
+#menu-button {
+  background-image: url(./assets/menu.svg);
+  background-size: cover;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  float: right;
+  width: 50px;
+}
+
+#menu {
   width: 100%;
-  aspect-ratio: calc(4 / 3);
-  object-fit: cover;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  background-color: #15364b61;
+  font-family: "Quicksand";
+  flex-direction: column;
+  color: white;
+  padding: 37px 0px 0px 0px;
+  align-items: flex-end;
+}
+
+#menu.invisible {
+  display: none;
+}
+
+h3 {
+  margin-right: 10px;
+  font-weight: normal;
 }
