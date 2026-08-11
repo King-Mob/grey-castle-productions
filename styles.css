@@ -9,13 +9,29 @@ body {
   margin: 0;
 }
 
+header:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url("./assets/lenny-lead.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  filter: blur(2px);
+}
+
 h1 {
   font-family: "Outfit", sans-serif;
   font-weight: bold;
   margin: 0;
   width: 100%;
   text-align: center;
-  background-color: var(--background);
   color: var(--text);
   line-height: 1.1em;
 }
@@ -34,14 +50,14 @@ h1 {
 }
 
 h2 {
-  font-size: 5.5vw;
+  font-size: 5.2vw;
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
   text-align: center;
   margin: 0;
   padding: 10px 0px;
-  background-color: #c3c3c3;
-  color: #000000;
+  background-color: #15364b;
+  color: #ffffff;
 }
 
 section {
@@ -52,7 +68,7 @@ section {
 }
 
 img {
-  width: 50%;
+  width: 100%;
   aspect-ratio: calc(4 / 3);
   object-fit: cover;
 }
