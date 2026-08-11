@@ -242,9 +242,9 @@
         let j = 0;
 
         for (const brick of bricks) {
-            const colours = ["#7b7b74", "#958a7d", "#c7baaa", "#b7b7b7", "#b0a6ac", "#81797b", "#797d81"];
+            const colours = ["#7b7b74", "#6e6e5e", "#797a6a", "#716565", "#727b7f", "#817f74", "#7b7074"];
 
-            brick.style.backgroundColor = colours[i * j % 11];
+            brick.style.backgroundColor = colours[(i + j) % 11];
 
             i += 3
             j += 4
