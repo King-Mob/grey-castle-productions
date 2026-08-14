@@ -168,8 +168,6 @@ p {
   padding: 10px;
   font-family: "Quicksand", sans-serif;
   color: #e0e2e5;
-  position: relative;
-  z-index: 1;
   background-color: #181818;
 }
 
