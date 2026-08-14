@@ -125,7 +125,9 @@ section {
   height: 50px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  float: right;
+  position: fixed;
+  right: 0px;
+  top: 0px;
   width: 50px;
 }
 
@@ -133,7 +135,8 @@ section {
   width: 100%;
   display: flex;
   z-index: 1;
-  position: absolute;
+  position: fixed;
+  top: 0px;
   background-color: #15364b61;
   font-family: "Quicksand";
   flex-direction: column;
@@ -146,7 +149,37 @@ section {
   display: none;
 }
 
+h2 {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  background: none;
+  font-weight: normal;
+}
+
 h3 {
   margin-right: 10px;
   font-weight: normal;
+}
+
+/* about page */
+
+p {
+  margin: 0px;
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  color: #e0e2e5;
+  position: relative;
+  z-index: 1;
+  background-color: #181818;
+}
+
+.about {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#debut {
+  background-color: #e0e2e5;
+  color: #181818;
 }

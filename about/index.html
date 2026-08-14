@@ -1,11 +1,11 @@
 <html lang="en">
 
 <head>
-    <title>Grey Castle Productions</title>
+    <title>About - Grey Castle Productions</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1" />
-    <link rel="icon" href="icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,61 @@
 </head>
 
 <body>
+    <button id="menu-button" alt="open menu"></button>
+    <div id="menu" class="invisible">
+        <a href="../projects">
+            <h3>Current Projects</h3>
+        </a>
+        <a href="../about">
+            <h3>About</h3>
+        </a>
+        <a href="../contacts">
+            <h3>Contact</h3>
+        </a>
+    </div>
+
+
+    <img class="about" src="../assets/small/lenny-stage.jpg" alt="young actor inside square set eyes closed">
+
+    <p>
+        Grey Castle Productions is a new-writing company dedicated to platforming queer stories.
+        Founded in 2023 by producer Simon Castle, the company develops and stages original new
+        work which challenges expectations and platforms bold LGBTQIA+ talent, on and off stage.
+    </p>
+
+    <img class="about" src="../assets/small/rhl-stage.jpg" alt="two actors deep in dialogue">
+
+    <p id="debut">
+        Their debut production, 'Is the WiFi Good in Hell?' (Underbelly) was nominated for an Off West
+        End Award, named a Playbill Pick of the Fringe, received over ten 4-and 5-star reviews and was
+        selected for a creative roundtable with Secretary of State for Culture, Lisa Nandy. GCP also
+        served as associate producer on the Chortle Award-nominated 'Dead Dad Show' (Soho
+        Theatre/UK Tour) and produced 'Two Tribes', a finalist for both the Charlie Hartill and Tony
+        Craze Awards.
+    </p>
+
+    <img class="about" src="../assets/small/two-tribes-stage.jpg"
+        alt="two actors on stage, one sitting, other shouting">
+
+    <p>
+        Grey Castle Productions continues to collaborate with emerging queer creatives to deliver
+        ambitious new theatre that centres LGBTQIA+ identity and celebrates underrepresented voices.
+    </p>
+
+    <img class="about" alt="actors with scripts and director in rehearsal space"
+        src="../assets/small/two-tribes-rehearsal.jpg">
+
+
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
 
 </body>
 
