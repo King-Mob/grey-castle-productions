@@ -10,6 +10,11 @@ body {
   margin: 0;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 button {
   z-index: 2;
   position: relative;
