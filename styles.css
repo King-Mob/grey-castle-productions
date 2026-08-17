@@ -168,6 +168,9 @@ h3 {
 #logo-link {
   width: 50%;
   display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 /* about page */
