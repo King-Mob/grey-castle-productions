@@ -161,6 +161,15 @@ h3 {
   font-weight: normal;
 }
 
+#logo {
+  width: 100%;
+}
+
+#logo-link {
+  width: 50%;
+  display: block;
+}
+
 /* about page */
 
 p {
