@@ -195,9 +195,29 @@ p {
   object-position: center;
 }
 
-#debut {
+#awards {
   background-color: #e0e2e5;
   color: #181818;
+  font-family: "Quicksand", sans-serif;
+  padding: 30px;
+}
+
+#awards h3 {
+  margin: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#awards h4 {
+  margin: 0px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+ul {
+  margin: 0px;
+  list-style-type: square;
 }
 
 #call-to-action {
