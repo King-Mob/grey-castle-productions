@@ -185,6 +185,10 @@ p {
   text-align: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .about {
   width: 100%;
   object-fit: cover;
@@ -194,4 +198,9 @@ p {
 #debut {
   background-color: #e0e2e5;
   color: #181818;
+}
+
+#call-to-action {
+  border: 1px solid #e0e2e5;
+  padding: 10px;
 }
