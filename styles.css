@@ -225,3 +225,44 @@ ul {
   border: 1px solid #e0e2e5;
   padding: 10px;
 }
+
+/* Contact Page */
+
+#contact {
+  background-color: #181818;
+  min-height: 100%;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact input,
+#contact button {
+  display: block;
+}
+
+#submit {
+  background: none;
+  border: 1px solid #e0e2e5;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #e0e2e5;
+  cursor: pointer;
+  width: fit-content;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
