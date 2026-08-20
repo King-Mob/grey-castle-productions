@@ -160,6 +160,7 @@ h2 {
 h3 {
   margin-right: 10px;
   font-weight: normal;
+  padding: 0px;
 }
 
 #logo {
@@ -275,7 +276,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-#project-page h3 {
+#logline {
   color: #e0e2e5;
   font-family: "Quicksand", sans-serif;
   text-align: center;
