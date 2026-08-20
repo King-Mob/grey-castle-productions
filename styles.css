@@ -332,3 +332,7 @@ textarea {
   padding: 0px 0px 10px;
   font-size: 14px;
 }
+
+iframe {
+  aspect-ratio: 16 / 9;
+}
