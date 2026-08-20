@@ -1,9 +1,9 @@
 html {
-  --background: #596168;
-  --text: white;
+  --background: #181818;
+  --text: #e0e2e5;
   --secondary-text: #00c200;
   --secondary-background: #1c2126;
-  background-color: #15364b;
+  background-color: #181818;
 }
 
 body {
@@ -265,4 +265,70 @@ textarea {
   width: 80%;
   margin-bottom: 20px;
   padding: 10px;
+}
+
+/* Project page  */
+
+#show-title {
+  margin-top: 60px;
+  color: #e0e2e5;
+  margin-bottom: 20px;
+}
+
+#project-page h3 {
+  color: #e0e2e5;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+
+.copy {
+  font-style: italic;
+}
+
+.review-container {
+  margin: 100px 5% 40px 5%;
+  border: 1px solid var(--text);
+  padding-top: 40px;
+}
+
+.review-container:before {
+  content: "“";
+  color: var(--text);
+  background-color: var(--background);
+  font-size: 200px;
+  position: absolute;
+  margin-top: -115px;
+  margin-left: 30px;
+  padding: -0px 20px;
+  height: 100px;
+}
+
+.stars {
+  font-size: 40px;
+  padding: 0px;
+  margin: 0% 10%;
+  text-align: left;
+}
+
+.review {
+  text-align: left;
+  padding: 0px;
+  padding-bottom: 10px;
+  margin: 0% 10%;
+}
+
+.divider {
+  background-color: var(--text);
+  height: 1px;
+  display: block;
+  margin-left: 10%;
+  width: 30%;
+}
+
+.reviewer {
+  text-align: left;
+  margin-left: 10%;
+  padding: 0px 0px 10px;
+  font-size: 14px;
 }
