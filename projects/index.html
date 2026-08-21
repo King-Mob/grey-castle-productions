@@ -4,8 +4,8 @@
     <title>Grey Castle Productions</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1" />
-    <link rel="icon" href="icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,63 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="projects">
+    <a href="/" id="logo-link">
+        <img id="logo" src="../GCP.png" alt="all caps logo of Grey Castle Productions">
+    </a>
+    <button id="menu-button" alt="open menu"></button>
+    <div id="menu" class="invisible">
+        <a href="../projects">
+            <h3>Current Projects</h3>
+        </a>
+        <a href="../about">
+            <h3>About</h3>
+        </a>
+        <a href="../contact">
+            <h3>Contact</h3>
+        </a>
+    </div>
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
+
+    <img class="about" src="../assets/small/rhl-stage.JPG">
+
+    <h2>Our Projects</h2>
+
+    <h4>Here are our recent projects.</h4>
+
+    <a href="./lenny">
+        <div class="project-container">
+            <img src="../assets/small/lenny-lead.jpg">
+            <div class="project-title-container" style="background-color: #4b82d0;">
+                <p class="project-title">lenny</p>
+                <p>VIEW PRODUCTION →</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="./itwgih">
+        <div class="project-container">
+            <img src="../assets/small/itwgin-lead.jpg">
+            <div class="project-title-container" style="background-color: #455c29;">
+                <p class="project-title">Is The Wifi Good In Hell?</p>
+                <p>VIEW PRODUCTION →</p>
+            </div>
+        </div>
+    </a>
+
+    <footer>
+        <p>Grey Castle Productions</p>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
 
 </body>
 

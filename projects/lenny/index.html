@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <title>Grey Castle Productions - Lenny</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1" />
+    <link rel="icon" href="../../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="project-page">
+    <a href="/" id="logo-link">
+        <img id="logo" src="../../GCP.png" alt="all caps logo of Grey Castle Productions">
+    </a>
+    <button id="menu-button" alt="open menu"></button>
+    <div id="menu" class="invisible">
+        <a href="../../projects">
+            <h3>Current Projects</h3>
+        </a>
+        <a href="../../about">
+            <h3>About</h3>
+        </a>
+        <a href="../../contact">
+            <h3>Contact</h3>
+        </a>
+    </div>
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
+
+    <h1 id="show-title">lenny</h1>
+
+    <img class="about" src="../../assets/small/lenny-stage.jpg" alt="actor standing on stage with colourful background">
+
+    <h3 id="logline">
+        lenny is tired of being on the sidelines of his own life.
+        But tonight, he's on a mission. Tonight, someone is
+        going to love him.
+    </h3>
+
+    <p>
+        “A beautifully crafted play that examines what it means to find your place in a
+        world as a generation cursed by the worry of being too much or too little, too
+        big or too small, too young or too old.” - Aimee Lou Wood
+    </p>
+
+    <p class="copy">
+        Dangerously close to the end of his twenties, lenny is still waiting for his life to
+        begin. But after waking up deathly hungover (and deeply disturbed by a
+        rather unsettling dream), lenny decides it's time to stop waiting and take
+        control.
+    </p>
+
+    <iframe width="100%" src="https://www.youtube.com/embed/KmCsjwIngCw?si=OkdtWVTqPzQJz2Hj"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div class="review-container">
+        <p class="stars">★★★★★</p>
+        <p class="review">captures the chaos of queer self-discovery with humour, heartbreak, and unforgettable
+            imagery.</p>
+        <span class="divider"></span>
+        <p class="reviewer">Flicker Magazine</p>
+    </div>
+
+    <div class="review-container">
+        <p class="stars">★★★★★</p>
+        <p class="review">In a sea of tragic queer drama, Webster makes their audience root for lenny.</p>
+        <span class="divider"></span>
+        <p class="reviewer">The New Current</p>
+    </div>
+
+    <div class="review-container">
+        <p class="stars">★★★★</p>
+        <p class="review">a haunting, nuanced portrait of loneliness and courage</p>
+        <span class="divider"></span>
+        <p class="reviewer">Reviews Hub</p>
+    </div>
+
+</body>
+
+</html>
