@@ -176,6 +176,18 @@ h3 {
   z-index: 2;
 }
 
+footer {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+  border-top: 1px solid var(--text);
+}
+
+footer p {
+  padding: 0px;
+  font-size: 12px;
+}
+
 /* about page */
 
 p {
