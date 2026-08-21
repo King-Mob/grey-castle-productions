@@ -266,9 +266,46 @@ textarea {
   width: 80%;
   margin-bottom: 20px;
   padding: 10px;
+  font-family: "Quicksand", sans-serif;
 }
 
-/* Project page  */
+/* Projects Page */
+
+#projects h2 {
+  text-align: center;
+}
+
+#projects h4 {
+  text-align: center;
+  color: var(--text);
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+}
+
+.project-container {
+  width: 80%;
+  margin: 40px 10%;
+}
+
+.project-container p {
+  background: none;
+  padding: 10px;
+}
+
+.project-container img {
+  width: 100%;
+}
+
+.project-title-container {
+  margin-top: -90px;
+  position: relative;
+}
+
+.project-title {
+  font-size: 30px;
+}
+
+/* Project Page  */
 
 #show-title {
   margin-top: 60px;
