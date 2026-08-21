@@ -181,6 +181,7 @@ footer {
   margin-top: 20px;
   margin-left: 10%;
   border-top: 1px solid var(--text);
+  padding: 5px 0px;
 }
 
 footer p {
