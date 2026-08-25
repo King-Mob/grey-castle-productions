@@ -4,8 +4,8 @@
     <title>Grey Castle Productions</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1" />
-    <link rel="icon" href="icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +14,19 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="contact">
     <a href="/" id="logo-link">
-        <img id="logo" src="GCP.png" alt="all caps logo of Grey Castle Productions">
+        <img id="logo" src="../GCP.png" alt="all caps logo of Grey Castle Productions">
     </a>
     <button id="menu-button" alt="open menu"></button>
     <div id="menu" class="invisible">
-        <a href="./projects">
+        <a href="../projects">
             <h3>Current Projects</h3>
         </a>
-        <a href="./about">
+        <a href="../about">
             <h3>About</h3>
         </a>
-        <a href="./contact">
+        <a href="../contact">
             <h3>Contact</h3>
         </a>
     </div>
@@ -41,16 +41,23 @@
         }
     </script>
 
-    <header>
-        <img src="./assets/small/itwgin-lead.jpg" id="itwgin">
-        <img src="./assets/small/rhl-lead.jpg" id="rhl">
-        <img src="./assets/small/two-tribes-lead.jpg" id="two-tribes">
-        <img src="./assets/small/lenny-lead.jpg" id="lenny">
-    </header>
+    <img class="about" src="../assets/small/itwgin-spotlight.jpg" alt="actor smiling in spotlight">
 
+    <h2>Make us smile... contact us</h2>
 
+    <form action="https://api.web3forms.com/submit  " method="POST">
+        <input type="hidden" name="access_key" value="1a4f5de6-d268-49f7-9f70-67af08ff9d2f">
+        <input type="hidden" name="redirect" value="./?thanks=true">
+        <input type="text" name="name" required placeholder="Name">
+        <input type="email" name="email" required placeholder="Email">
+        <textarea name="message" required placeholder="Message"></textarea>
+        <button id="submit" type="submit">Contact</button>
+    </form>
 
-    <h2 id="slogan">New-writing Platforming Queer Stories</h2>
+    <footer>
+        <p>Grey Castle Productions</p>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
 
 </body>
 
