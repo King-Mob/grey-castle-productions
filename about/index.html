@@ -30,6 +30,16 @@
             <h3>Contact</h3>
         </a>
     </div>
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
 
 
     <img class="about" src="../assets/small/lenny-stage.jpg" alt="young actor inside square set eyes closed">
@@ -86,17 +96,10 @@
     <img class="about" alt="actors with scripts and director in rehearsal space"
         src="../assets/small/two-tribes-rehearsal.jpg">
 
-
-    <script>
-        const menu = document.getElementById("menu");
-        const menuButton = document.getElementById("menu-button");
-
-        menuButton.onclick = () => {
-            menu.classList.contains("invisible") ?
-                menu.classList.remove("invisible") :
-                menu.classList.add("invisible")
-        }
-    </script>
+    <footer>
+        <p>Grey Castle Productions</p>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
 
 </body>
 

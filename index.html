@@ -30,6 +30,16 @@
             <h3>Contact</h3>
         </a>
     </div>
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
 
     <header>
         <img src="./assets/small/itwgin-lead.jpg" id="itwgin">
@@ -41,17 +51,6 @@
 
 
     <h2 id="slogan">New-writing Platforming Queer Stories</h2>
-
-    <script>
-        const menu = document.getElementById("menu");
-        const menuButton = document.getElementById("menu-button");
-
-        menuButton.onclick = () => {
-            menu.classList.contains("invisible") ?
-                menu.classList.remove("invisible") :
-                menu.classList.add("invisible")
-        }
-    </script>
 
 </body>
 
