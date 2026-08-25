@@ -186,8 +186,6 @@ footer {
   margin-left: 10%;
   border-top: 1px solid var(--text);
   padding: 5px 0px;
-  position: absolute;
-  bottom: 0px;
 }
 
 footer p {
@@ -286,6 +284,11 @@ textarea {
   margin-bottom: 20px;
   padding: 10px;
   font-family: "Quicksand", sans-serif;
+}
+
+#contact footer {
+  position: absolute;
+  bottom: 0px;
 }
 
 /* Projects Page */
