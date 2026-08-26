@@ -293,6 +293,7 @@ textarea {
 #contact footer {
   position: absolute;
   bottom: 0px;
+  width: 90%;
 }
 
 /* Projects Page */
