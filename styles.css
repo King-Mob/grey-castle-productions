@@ -147,7 +147,8 @@ section {
   flex-direction: column;
   color: white;
   padding: 37px 0px 0px 0px;
-  align-items: flex-end;
+  align-items: center;
+  backdrop-filter: blur(2px);
 }
 
 #menu.invisible {
@@ -167,9 +168,15 @@ h3 {
   padding: 0px;
 }
 
+#menu h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
 #menu .menu-item {
   margin: 20px 10px 10px 0px;
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 25px;
   padding: 0px;
 }
 
