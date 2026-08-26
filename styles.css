@@ -316,6 +316,11 @@ textarea {
   flex-direction: column;
 }
 
+.project-container img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
 .project-container p {
   margin-bottom: 0px;
   padding: 0px;
