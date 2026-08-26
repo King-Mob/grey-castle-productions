@@ -187,9 +187,7 @@ h3 {
 }
 
 footer {
-  width: 80%;
-  margin-top: 20px;
-  margin-left: 10%;
+  margin: 20px 5% 0px;
   border-top: 1px solid var(--text);
   padding: 5px 0px;
 }
@@ -311,26 +309,27 @@ textarea {
 }
 
 .project-container {
-  width: 80%;
-  margin: 40px 10%;
+  margin: 40px 5%;
+  padding: 10px;
+  border: solid 1px var(--text);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-container p {
-  background: none;
-  padding: 10px;
-}
-
-.project-container img {
-  width: 100%;
-}
-
-.project-title-container {
-  margin-top: -90px;
-  position: relative;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
 .project-title {
   font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.project-container h3 {
+  margin: 0px;
+  margin-top: 10px;
 }
 
 /* Project Page  */
