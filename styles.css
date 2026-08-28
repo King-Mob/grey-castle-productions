@@ -229,6 +229,12 @@ footer {
   padding: 5px 0px;
 }
 
+@media screen and (min-width: 800px) {
+  footer {
+    margin: 20px 0px 0px;
+  }
+}
+
 footer p {
   padding: 0px;
   font-size: 12px;
@@ -356,7 +362,7 @@ textarea {
 
 @media screen and (min-width: 800px) {
   .project-container {
-    height: 450px;
+    height: 470px;
     justify-content: space-between;
   }
 }
@@ -498,6 +504,12 @@ iframe {
   border: 1px solid var(--text);
 }
 
+@media screen and (min-width: 800px) {
+  #gallery {
+    margin: 10px 0px;
+  }
+}
+
 .gallery-image {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -549,6 +561,7 @@ iframe {
 @media (min-width: 800px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0px;
   }
 
   /* if the last item is odd-numbered, it's the lone leftover in its row */
