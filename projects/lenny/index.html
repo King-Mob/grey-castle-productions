@@ -21,7 +21,10 @@
     <button id="menu-button" alt="open menu"></button>
     <div id="menu" class="invisible">
         <a href="../../projects">
-            <h3 class="menu-item">Current Projects</h3>
+            <h3 class="menu-item">Projects</h3>
+        </a>
+        <a href="../../engagements">
+            <h3 class="menu-item">Engagements</h3>
         </a>
         <a href="../../about">
             <h3 class="menu-item">About</h3>
@@ -68,6 +71,38 @@
         rather unsettling dream), lenny decides it's time to stop waiting and take
         control.
     </p>
+
+    <div id="gallery">
+        <img class="gallery-image" src="../../assets/small/lenny-stage.jpg">
+        <img class="gallery-image" src="../../assets/small/lenny-stage.jpg">
+        <img class="gallery-image" src="../../assets/small/lenny-stage.jpg">
+        <img class="gallery-image" src="../../assets/small/lenny-stage.jpg">
+        <button id="gallery-close" aria-label="Close">&times;</button>
+    </div>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+        const closeBtn = document.getElementById('gallery-close');
+        const images = document.querySelectorAll('.gallery-image');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                if (img.classList.contains('enlarged')) return;
+                img.classList.add('enlarged');
+                closeBtn.classList.add('active');
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            const enlarged = gallery.querySelector('.gallery-image.enlarged');
+            if (enlarged) enlarged.classList.remove('enlarged');
+            closeBtn.classList.remove('active');
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeBtn.click();
+        });
+    </script>
 
     <div class="review-container">
         <p class="stars">★★★★★</p>
