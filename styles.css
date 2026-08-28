@@ -290,6 +290,8 @@ ul {
 #contact {
   background-color: #181818;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #contact h2 {
@@ -297,7 +299,7 @@ ul {
 }
 
 #contact input,
-#contact button {
+#submit {
   display: block;
 }
 
@@ -328,9 +330,7 @@ textarea {
 }
 
 #contact footer {
-  position: absolute;
-  bottom: 0px;
-  width: 90%;
+  margin-top: auto;
 }
 
 /* Projects Page */
@@ -347,16 +347,24 @@ textarea {
 }
 
 .project-container {
-  margin: 40px 5%;
+  margin: 0px;
   padding: 10px;
   border: solid 1px var(--text);
   display: flex;
   flex-direction: column;
 }
 
+@media screen and (min-width: 800px) {
+  .project-container {
+    height: 450px;
+    justify-content: space-between;
+  }
+}
+
 .project-container img {
   aspect-ratio: 1;
   object-fit: cover;
+  width: 100%;
 }
 
 .project-container p {
@@ -457,9 +465,12 @@ iframe {
 .cast-container {
   border: solid 1px var(--text);
   padding: 20px;
-  margin: 20px 5%;
   display: flex;
   flex-direction: column;
+}
+
+.cast-container img {
+  width: 100%;
 }
 
 #project-page h3 {
