@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+    <title>Grey Castle Productions - Rot. Husk. Loser</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1" />
+    <link rel="icon" href="../../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="project-page">
+    <a href="/" id="logo-link">
+        <img id="logo" src="../../GCP.png" alt="all caps logo of Grey Castle Productions">
+    </a>
+    <button id="menu-button" alt="open menu"></button>
+    <div id="menu" class="invisible">
+        <a href="../../projects">
+            <h3 class="menu-item">Projects</h3>
+        </a>
+        <a href="../../engagements">
+            <h3 class="menu-item">Engagements</h3>
+        </a>
+        <a href="../../about">
+            <h3 class="menu-item">About</h3>
+        </a>
+        <a href="../../contact">
+            <h3 class="menu-item">Contact</h3>
+        </a>
+    </div>
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
+
+    <img class="about" src="../../assets/small/rhl-lead-wide.jpg"
+        alt="actor standing on stage with colourful background">
+
+    <h1 id="show-title">Rot. Husk. Loser</h1>
+
+    <h3 id="logline">
+        Two plays in dialogue reflect an atomised city. Winners. Losers. Jokers. Addictions. Work. Fragility. Backbones.
+    </h3>
+
+    <iframe width="100%" src="https://www.youtube.com/embed/zjlob-qA1B8?si=t6ZYaf_vXgS25TVe"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>
+        From writers Simon Castle, Somebody Jones and Nusrath Tapadar, ROT. HUSK. LOSER. is a unique collaboration that
+        brings together two stories about lies, vanity and love.
+    </p>
+
+    <p class="copy">
+        Backstage at a gig, an up-and-coming pop band struggle under the pressure of rivalries and unearthed secrets. In
+        a women’s prison something is growing that is red, alive and strictly forbidden.
+    </p>
+
+    <div id="gallery">
+        <img class="gallery-image" src="../../assets/small/rhl-stage.jpg">
+        <img class="gallery-image" src="../../assets/small/rhl-stage-2.JPG">
+        <img class="gallery-image" src="../../assets/small/rhl-stage-3.jpg">
+        <img class="gallery-image" src="../../assets/small/rhl-stage-4.jpg">
+        <button id="gallery-close" aria-label="Close">&times;</button>
+    </div>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+        const closeBtn = document.getElementById('gallery-close');
+        const images = document.querySelectorAll('.gallery-image');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                if (img.classList.contains('enlarged')) return;
+                img.classList.add('enlarged');
+                closeBtn.classList.add('active');
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            const enlarged = gallery.querySelector('.gallery-image.enlarged');
+            if (enlarged) enlarged.classList.remove('enlarged');
+            closeBtn.classList.remove('active');
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeBtn.click();
+        });
+    </script>
+
+    <div id="reviews" class="grid">
+
+        <div class="review-container">
+            <p class="stars">★★★★</p>
+            <p class="review">Husk is something of a misnomer as this bitesize play is fully formed and packs a punch
+                worth cheering for.</p>
+            <span class="divider"></span>
+            <p class="reviewer">Everything Theatre</p>
+        </div>
+
+    </div>
+
+    <h2>Cast and Creative</h2>
+
+    <div id="cast" class="grid">
+
+        <div class="cast-container">
+            <img src="../../assets/small/corinna-headshot.jpg">
+            <h3><span class="role">Maz & Alonda</span><br>Corinna Brown</h3>
+        </div>
+        <div class="cast-container">
+            <img src="../../assets/small/kemi-headshot.jpg">
+            <h3><span class="role">Skylar & Essie</span><br>Kemi Awoderu</h3>
+        </div>
+        <div class="cast-container">
+            <img src="../../assets/small/cameron-headshot.jpg">
+            <h3><span class="role">Raphi & Tomi</span><br>Cameron Tharmaratnam</h3>
+        </div>
+        <div class="cast-container">
+            <img src="../../assets/small/shadrach-headshot.jpg">
+            <h3><span class="role">Lee & Officer</span><br>Shadrach Agozino</h3>
+        </div>
+
+    </div>
+
+    <h3><span class="role">Writer</span> <br> Simon Castle</h3>
+    <h3><span class="role">Writer</span> <br> Somebody Jones</h3>
+    <h3><span class="role">Writer</span> <br> Nusrath Tapadar</h3>
+    <h3><span class="role">Director</span> <br> Guy Hodgkinson</h3>
+    <h3><span class="role">Assistant Director</span> <br> Holly Stevens</h3>
+    <h3><span class="role">Casting Director</span> <br> Amy Jackson</h3>
+    <h3><span class="role">Lighting Designer</span> <br> Benny Goodman</h3>
+    <h3><span class="role">Costume & Set Designer</span> <br> Debbie Duru</h3>
+    <h3><span class="role">Composer and Sound Designer</span> <br> Isaac Stuart</h3>
+    <h3><span class="role">Associate Producer</span> <br> Simon Castle, for Grey Castle Productions</h3>
+    <h3><span class="role">Venue</span> <br> Park Theatre</h3>
+
+    <footer>
+        <p>Grey Castle Productions</p>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

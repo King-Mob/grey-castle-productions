@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+    <title>Grey Castle Productions - Positive</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1" />
+    <link rel="icon" href="../../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="project-page">
+    <a href="/" id="logo-link">
+        <img id="logo" src="../../GCP.png" alt="all caps logo of Grey Castle Productions">
+    </a>
+    <button id="menu-button" alt="open menu"></button>
+    <div id="menu" class="invisible">
+        <a href="../../projects">
+            <h3 class="menu-item">Projects</h3>
+        </a>
+        <a href="../../engagements">
+            <h3 class="menu-item">Engagements</h3>
+        </a>
+        <a href="../../about">
+            <h3 class="menu-item">About</h3>
+        </a>
+        <a href="../../contact">
+            <h3 class="menu-item">Contact</h3>
+        </a>
+    </div>
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
+
+    <img class="about" src="../../assets/small/positive-lead.jpg"
+        alt="actor standing on stage with colourful background">
+
+    <h1 id="show-title">Positive</h1>
+
+    <h3 id="logline">
+        POSITIVE is a two-hander about Black, gay masculinity and HIV+ status, told through the relationship between two
+        Black, gay best friends.
+    </h3>
+
+    <p class="copy">
+        Recently single Malachi is hellbent on exploring his sexuality in any way he sees fit, whilst Ade is navigating
+        life after recently finding out he is HIV positive.
+    </p>
+
+    <div id="gallery">
+        <img class="gallery-image" src="../../assets/small/positive-lead.jpg">
+        <img class="gallery-image" src="../../assets/small/positive-stage.jpg">
+        <img class="gallery-image" src="../../assets/small/positive-stage-2.jpg">
+        <img class="gallery-image" src="../../assets/small/positive-lead.jpg">
+        <button id="gallery-close" aria-label="Close">&times;</button>
+    </div>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+        const closeBtn = document.getElementById('gallery-close');
+        const images = document.querySelectorAll('.gallery-image');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                if (img.classList.contains('enlarged')) return;
+                img.classList.add('enlarged');
+                closeBtn.classList.add('active');
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            const enlarged = gallery.querySelector('.gallery-image.enlarged');
+            if (enlarged) enlarged.classList.remove('enlarged');
+            closeBtn.classList.remove('active');
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeBtn.click();
+        });
+    </script>
+
+    <div id="reviews" class="grid">
+
+        <div class="review-container">
+            <p class="stars">★★★★★</p>
+            <p class="review">Exceptional</p>
+            <span class="divider"></span>
+            <p class="reviewer">West End Best Friend</p>
+        </div>
+        <div class="review-container">
+            <p class="stars">★★★★</p>
+            <p class="review">Orchestrated beautifully</p>
+            <span class="divider"></span>
+            <p class="reviewer">Everything Theatre</p>
+        </div>
+        <div class="review-container">
+            <p class="stars">★★★★</p>
+            <p class="review">Five star performances</p>
+            <span class="divider"></span>
+            <p class="reviewer"> Curtain Call Reviews</p>
+        </div>
+    </div>
+
+    <h2>Cast and Creative</h2>
+
+    <div id="cast" class="grid">
+
+        <div class="cast-container">
+            <img src="../../assets/small/kojo-headshot.jpeg">
+            <h3><span class="role">Ade</span><br>Kojo Quianoo</h3>
+        </div>
+        <div class="cast-container">
+            <img src="../../assets/small/malachi-headshot.jpeg">
+            <h3><span class="role">Malachi</span><br>Malachi Antonio</h3>
+        </div>
+
+    </div>
+
+    <h3><span class="role">Writer</span> <br> Temi Majekodunmi</h3>
+    <h3><span class="role">Director</span> <br> Robert Awosusi</h3>
+    <h3><span class="role">Producer</span> <br> Mwansa Phiri</h3>
+    <h3><span class="role">Assistant Producer</span> <br> Emmanuella Damptey</h3>
+    <h3><span class="role">Engagement Producer</span> <br> Simon Castle</h3>
+    <h3><span class="role">Assistant Director</span> <br> Llyrio Boateng</h3>
+    <h3><span class="role">Set and Costume Designer</span> <br> Amanda Ramasawmy</h3>
+    <h3><span class="role">Sound Designer</span> <br> Esther Kehinde Ajayi</h3>
+    <h3><span class="role">Lighting Designer</span> <br> Alex Forey</h3>
+    <h3><span class="role">Movement Designer</span> <br> Tanaka Bingwa</h3>
+    <h3><span class="role">Intimacy Designer</span> <br> Tommy Ross-Williams</h3>
+    <h3><span class="role">Dramaturg</span> <br> malakaï sargeant</h3>
+    <h3><span class="role">Stage Manager</span> <br> Leonora Nicholson</h3>
+    <h3><span class="role">Communications Lead</span> <br> Kizzi Barazetti</h3>
+    <h3><span class="role">Engagement Co-Ordinator</span> <br> Daniel Ahenkorah</h3>
+    <h3><span class="role">Image credit</span> <br> Ross Kernahan</h3>
+    <h3><span class="role">Video credit</span> <br> Chewboy Productions</h3>
+    <h3><span class="role">Production Company</span> <br> Visual Sauce</h3>
+
+    <footer>
+        <p>Grey Castle Productions</p>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

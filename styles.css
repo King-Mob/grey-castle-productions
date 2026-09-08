@@ -477,6 +477,8 @@ iframe {
 
 .cast-container img {
   width: 100%;
+  aspect-ratio: 9/12;
+  object-fit: cover;
 }
 
 #project-page h3 {

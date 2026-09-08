@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <title>Grey Castle Productions - All Of Them, Dead</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1" />
+    <link rel="icon" href="../../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="project-page">
+    <a href="/" id="logo-link">
+        <img id="logo" src="../../GCP.png" alt="all caps logo of Grey Castle Productions">
+    </a>
+    <button id="menu-button" alt="open menu"></button>
+    <div id="menu" class="invisible">
+        <a href="../../projects">
+            <h3 class="menu-item">Projects</h3>
+        </a>
+        <a href="../../engagements">
+            <h3 class="menu-item">Engagements</h3>
+        </a>
+        <a href="../../about">
+            <h3 class="menu-item">About</h3>
+        </a>
+        <a href="../../contact">
+            <h3 class="menu-item">Contact</h3>
+        </a>
+    </div>
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
+
+    <img class="about" src="../../assets/small/all-of-them-dead-lead.jpg"
+        alt="actor standing on stage with colourful background">
+
+    <h1 id="show-title">All Of Them, Dead</h1>
+
+    <h3 id="logline">
+        In a global pandemic caused by infected meat, two boys find they're much less alone than they thought.
+    </h3>
+
+    <iframe width="100%" src="https://www.youtube.com/embed/K1r0kxzvQbs?si=UpH6seoKyl-eCGBJ"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>
+        All Of Them, Dead is a play about being young, gay and working-class in the middle of nowhere. It’s about the
+        things that go unsaid, it’s about two boys holding hands, it’s about clinging together as the world changes
+        around you. And it’s about meat falling from the sky (no, really).
+    </p>
+
+    <p class="copy">
+        Like ‘Heartstopper’ meets ‘The Day Of The Triffids’, All Of Them, Dead is a sharp, funny and touching queer love
+        story for the end of the world.
+    </p>
+
+    <div id="gallery">
+        <img class="gallery-image" src="../../assets/small/aotd-stage.jpg">
+        <img class="gallery-image" src="../../assets/small/aotd-stage-2.JPG">
+        <img class="gallery-image" src="../../assets/small/aotd-stage-3.jpg">
+        <img class="gallery-image" src="../../assets/small/aotd-stage-4.jpg">
+        <button id="gallery-close" aria-label="Close">&times;</button>
+    </div>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+        const closeBtn = document.getElementById('gallery-close');
+        const images = document.querySelectorAll('.gallery-image');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                if (img.classList.contains('enlarged')) return;
+                img.classList.add('enlarged');
+                closeBtn.classList.add('active');
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            const enlarged = gallery.querySelector('.gallery-image.enlarged');
+            if (enlarged) enlarged.classList.remove('enlarged');
+            closeBtn.classList.remove('active');
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeBtn.click();
+        });
+    </script>
+
+    <div id="reviews" class="grid">
+
+        <div class="review-container">
+            <p class="stars">★★★★★</p>
+            <p class="review">Finally, a story for the rural queer kids…Full of tenderness yet brimming with doubt and
+                shame.</p>
+            <span class="divider"></span>
+            <p class="reviewer">A Youngish Perspective</p>
+        </div>
+
+    </div>
+
+    <h2>Cast and Creative</h2>
+
+    <div id="cast" class="grid">
+
+        <div class="cast-container">
+            <img src="../../assets/small/daniel-f-headshot.jpeg">
+            <h3><span class="role">Corey</span><br>Daniel Ferrier</h3>
+        </div>
+        <div class="cast-container">
+            <img src="../../assets/small/daniel-m-headshot.jpeg">
+            <h3><span class="role">Harry</span><br>Daniel Metcalfe</h3>
+        </div>
+        <div class="cast-container">
+            <img src="../../assets/small/nathan-headshot.jpg">
+            <h3><span class="role">Howthorth</span><br>Nathan Peter Grassi</h3>
+        </div>
+        <div class="cast-container">
+            <img src="../../assets/small/karen-headshot.jpeg">
+            <h3><span class="role">Lippins</span><br>Karen Ford</h3>
+        </div>
+
+    </div>
+
+    <h3><span class="role">Directed by</span> <br> Krage Brown & Thom Munden</h3>
+    <h3><span class="role">Writer</span> <br> Thom Munden</h3>
+    <h3><span class="role">Producer</span> <br> Nadia Rich</h3>
+    <h3><span class="role">Engagement Producer</span> <br> Simon Castle</h3>
+    <h3><span class="role">Video Director</span> <br> August Richards</h3>
+    <h3><span class="role">Dramaturg</span> <br> Tristan Jackson-Pate</h3>
+    <h3><span class="role">Assistant Director</span> <br> Lucy Findlay</h3>
+    <h3><span class="role">Set Design</span> <br> Victoria Spearing</h3>
+    <h3><span class="role">Lighting Design</span> <br> Andy Lay</h3>
+    <h3><span class="role">Technical Tour Manager</span> <br> Dan Thompson</h3>
+    <h3><span class="role">Technical Consultant</span> <br> Dan Parry</h3>
+    <h3><span class="role">Intimacy Coordinator</span> <br> Olivia Heggs</h3>
+    <h3><span class="role">Brand & Poster Design</span> <br> Carl Sutton</h3>
+    <h3><span class="role">Marketing</span> <br> Rachel Veniard</h3>
+    <h3><span class="role">Production Company</span> <br> Everybody Panic</h3>
+
+    <footer>
+        <p>Grey Castle Productions</p>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

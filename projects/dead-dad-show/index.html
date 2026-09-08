@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <title>Grey Castle Productions - Dead Dad Show</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1" />
+    <link rel="icon" href="../../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="project-page">
+    <a href="/" id="logo-link">
+        <img id="logo" src="../../GCP.png" alt="all caps logo of Grey Castle Productions">
+    </a>
+    <button id="menu-button" alt="open menu"></button>
+    <div id="menu" class="invisible">
+        <a href="../../projects">
+            <h3 class="menu-item">Projects</h3>
+        </a>
+        <a href="../../engagements">
+            <h3 class="menu-item">Engagements</h3>
+        </a>
+        <a href="../../about">
+            <h3 class="menu-item">About</h3>
+        </a>
+        <a href="../../contact">
+            <h3 class="menu-item">Contact</h3>
+        </a>
+    </div>
+    <script>
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-button");
+
+        menuButton.onclick = () => {
+            menu.classList.contains("invisible") ?
+                menu.classList.remove("invisible") :
+                menu.classList.add("invisible")
+        }
+    </script>
+
+    <img class="about" src="../../assets/small/dead-dad-show-lead.jpg"
+        alt="actor standing on stage with colourful background">
+
+    <h1 id="show-title">Dead Dad Show</h1>
+
+    <h3 id="logline">
+        In 2018, Simon’s father performed a play about his imminent death to cancer and, to Simon’s horror, it was quite
+        good.
+    </h3>
+
+    <img class="about" src="../../assets/small/dead-dad-show-stage.webp"
+        alt="actor standing on stage with colourful background">
+
+    <p>
+        Now, directed by Fringe First winner Chris Larner, bouncing between genres and intertwined with footage of his
+        late father’s show, Simon performs an hour so impressive that he’ll never be forgotten.
+    </p>
+
+    <p class="copy">
+        Following an acclaimed Edinburgh run, Dead Dad Show is embarking on a UK Tour partnering with leading end of
+        life charity, Marie Curie, and trans-led organisation, Not A Phase.
+    </p>
+
+    <div id="reviews" class="grid">
+
+        <div class="review-container">
+            <p class="stars">★★★★★</p>
+            <p class="review">Five stars somehow feel inadequate for this joyous, hilarious, brilliant, witty, sparkly
+                campfest of a show.</p>
+            <span class="divider"></span>
+            <p class="reviewer">Scotsman</p>
+        </div>
+
+        <div class="review-container">
+            <p class="stars">★★★★★</p>
+            <p class="review">From start to finish, this is a superbly performed piece... Simon deserves the awards he
+                dreams about getting</p>
+            <span class="divider"></span>
+            <p class="reviewer">Reviews Hub</p>
+        </div>
+
+        <div class="review-container">
+            <p class="stars">★★★★</p>
+            <p class="review">A tender, heartfelt tribute, the much-mocked ‘serious bit’ of dead dad shows proves
+                affecting yet again</p>
+            <span class="divider"></span>
+            <p class="reviewer">Chortle</p>
+        </div>
+
+        <div class="review-container">
+            <p class="stars">★★★★</p>
+            <p class="review">A truly original take on a Dead Dad Show sending up every style of showbiz pretension</p>
+            <span class="divider"></span>
+            <p class="reviewer">Beyond The Joke</p>
+        </div>
+
+        <div class="review-container">
+            <p class="stars">★★★★</p>
+            <p class="review">A laugh-packed, emotional ride. A glorious send-up of trauma porn that’s nevertheless also
+                a touching tribute to a late father.</p>
+            <span class="divider"></span>
+            <p class="reviewer">The List</p>
+        </div>
+
+    </div>
+
+    <h2>Cast and Creative</h2>
+
+    <div id="cast" class="grid">
+
+        <div class="cast-container">
+            <img src="../../assets/small/simon-headshot.jpg">
+            <h3><span class="role">Simon</span><br>Simon David</h3>
+        </div>
+
+    </div>
+
+    <h3><span class="role">Writer</span> <br> Simon David</h3>
+    <h3><span class="role">Director</span> <br> Chris Larner</h3>
+    <h3><span class="role">Associate Producer</span> <br> Simon Castle</h3>
+
+    <footer>
+        <p>Grey Castle Productions</p>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
