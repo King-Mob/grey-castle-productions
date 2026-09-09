@@ -389,6 +389,42 @@ textarea {
   margin-top: 10px;
 }
 
+/* Engagements */
+
+#engagements p {
+  margin: 10px;
+  padding: 10px;
+}
+
+#engagements .project-container p {
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+#engagements .accordion-content p {
+  text-align: left;
+}
+
+#engagements .accordion-content li {
+  margin: 10px;
+  text-align: left;
+}
+
+#engagements-container {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .accordion-item {
+    margin: 10px 5%;
+  }
+}
+
+#engagements footer p {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* Project Page  */
 
 #show-title {
@@ -572,4 +608,51 @@ iframe {
     justify-self: center;
     width: calc(50% - 5px); /* match the width of a normal column */
   }
+}
+
+/* Accordion section on engagement page */
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 14px 0;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.accordion-header .arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-weight: 400;
+}
+
+.accordion-header.open .arrow {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  display: none;
+  padding: 0 0 18px 0;
+  line-height: 1.6;
+}
+
+.accordion-content.open {
+  display: block;
+}
+
+.accordion-content p {
+  margin: 0 0 12px 0;
+}
+
+.accordion-content ul {
+  margin: 0 0 12px 0;
+  padding-left: 20px;
 }

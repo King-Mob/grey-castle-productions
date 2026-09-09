@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body id="projects">
+<body id="engagements">
     <a href="/" id="logo-link">
         <img id="logo" src="../GCP.png" alt="all caps logo of Grey Castle Productions">
     </a>
@@ -46,11 +46,120 @@
 
     <img class="about" src="../assets/small/positive-stage.jpg">
 
-    <h2>Engagements</h2>
+    <h2>Engagement Producing</h2>
 
-    <h4>Projects Grey Castle Productions were engaged to produce.</h4>
+    <p>Simon designs and delivers bespoke engagement programmes around new writing, be that during an R&D,
+        production or touring.</p>
+    <p>From paid trainee placements and writer commissions to workshops, open rehearsals and post-show events,
+        each programme is built to strengthen the production itself, developing new artists, identifying new
+        audiences, increasing ticket sales and creating meaningful activity around the work.</p>
+    <p>Programmes can be created from scratch, built into Arts Council England applications, or developed around
+        an existing funded or commercial project.</p>
 
-    <div id="engagements" class="grid">
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Trainee & Shadow Placements</span>
+            <span class="arrow">&gt;</span>
+        </div>
+        <div class="accordion-content">
+            <p>Paid Trainee Assistant Director, Trainee Assistant Producer and Shadow Director placements create
+                practical pathways for emerging creatives to gain experience within professional rehearsal and
+                production processes.</p>
+            <p>Placements are structured and mentored, with participants supported to move beyond observation and take
+                on meaningful responsibilities within the rehearsal room or wider production.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Creative Workshops</span>
+            <span class="arrow">&gt;</span>
+        </div>
+        <div class="accordion-content">
+            <p>Simon programmes practical workshops for emerging artists across writing, directing, producing and
+                theatre-making, led by established industry practitioners.</p>
+            <p>Previous facilitators include Rikki Beadle-Blair MBE, Tristan Fynn-Aiduenu and Somebody Jones.</p>
+            <p>Workshops can operate as standalone opportunities or form the first stage of a wider development pathway
+                into paid placements, commissions or other opportunities.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Response Play Commissions</span>
+            <span class="arrow">&gt;</span>
+        </div>
+        <div class="accordion-content">
+            <p>Simon creates paid response-play programmes in which emerging writers develop short work inspired by the
+                themes or world of a production.</p>
+            <p>Writers can receive dramaturgical support, collaborate with directors and see their work rehearsed and
+                performed alongside the wider production.</p>
+            <p>These programmes can also create progression opportunities for Trainee Assistant Directors, giving them
+                responsibility for directing new work with professional or emerging actors.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Audio & Digital Development</span>
+            <span class="arrow">&gt;</span>
+        </div>
+        <div class="accordion-content">
+            <p>Simon develops short-form audio drama and digital programmes combining workshops, mentoring and paid
+                commissions.</p>
+            <p>Working with recording studios and audio practitioners, emerging writers can develop new work from
+                initial idea through to recording and sharing, creating another route into professional creative
+                practice beyond the stage.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Q&As & Post-Show Events</span>
+            <span class="arrow">&gt;</span>
+        </div>
+        <div class="accordion-content">
+            <p>Simon develops events around productions that create further opportunities for audiences and artists to
+                meet and engage with the work.</p>
+            <p>These can include artist and specialist Q&As, facilitated conversations, workshops, queer nightlife
+                events, focus groups and more, all tailored to the production and its audiences.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Bespoke Programme Design</span>
+            <span class="arrow">&gt;</span>
+        </div>
+        <div class="accordion-content">
+            <p>Bring Simon onto a project early and he can build the entire engagement strand around it. This can
+                include:</p>
+            <ul>
+                <li>designing activity for Arts Council England applications</li>
+                <li>building engagement budgets</li>
+                <li>creating trainee and artist-development programmes</li>
+                <li>recruiting and contracting participants</li>
+                <li>commissioning facilitators and artists</li>
+                <li>managing venues and community partners</li>
+                <li>delivering open calls and marketing campaigns</li>
+                <li>overseeing delivery and safeguarding</li>
+                <li>evaluating impact and gathering reporting evidence</li>
+            </ul>
+            <p>From a single workshop or placement to a programme running throughout an entire production, activity is
+                shaped around the work, its audiences and the artists it has the potential to support.</p>
+            <p>Developing a show? Let's build an engagement programme around it, support your funding & the next
+                generation of artists.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleAccordion(header) {
+            header.classList.toggle('open');
+            header.nextElementSibling.classList.toggle('open');
+        }
+    </script>
+
+    <div id="engagements-container" class="grid">
 
         <a href="./all-of-them-dead">
             <div class="project-container">
