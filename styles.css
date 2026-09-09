@@ -262,23 +262,28 @@ p {
 }
 
 #awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+#awards,
+#awards p {
   background-color: #e0e2e5;
   color: #181818;
   font-family: "Quicksand", sans-serif;
-  padding: 30px;
 }
 
-#awards h3 {
-  margin: 0px;
-  font-size: 30px;
-  text-align: center;
+#awards p {
+  padding: 0px;
+  margin: 10px 0px;
 }
 
-#awards h4 {
-  margin: 0px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  text-align: center;
+#awards img {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0px;
 }
 
 ul {
