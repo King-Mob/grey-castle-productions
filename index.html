@@ -44,16 +44,125 @@
         }
     </script>
 
-    <header>
-        <img src="./assets/small/itwgin-lead.jpg" id="itwgin">
-        <img src="./assets/small/rhl-lead.jpg" id="rhl">
-        <img src="./assets/small/two-tribes-lead.jpg" id="two-tribes">
-        <img src="./assets/small/lenny-lead.jpg" id="lenny">
-    </header>
+    <div class="carousel-wrapper">
+        <div class="carousel-track" id="carouselTrack">
 
+            <a class="carousel-item" href="./productions/is-the-wifi-good-in-hell/">
+                <img src="./assets/small/itwgih-lead-text.jpg" alt="is the wifi good in hell?">
+                <div class="carousel-caption">
+                    <span class="title">Is The Wifi Good In Hell?</span>
+                    <span class="theatre">Omnibus Theatre</span>
+                    <span class="year">2023</span>
+                </div>
+            </a>
 
+            <a class="carousel-item" href="./productions/lenny">
+                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <div class="carousel-caption">
+                    <span class="title">lenny.</span>
+                    <span class="theatre">Omnibus Theatre</span>
+                    <span class="year">2023</span>
+                </div>
+            </a>
 
-    <h2 id="slogan">New-writing Platforming Queer Stories</h2>
+            <a class="carousel-item" href="./productions/rot-husk-loser/">
+                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <div class="carousel-caption">
+                    <span class="title">lenny.</span>
+                    <span class="theatre">Omnibus Theatre</span>
+                    <span class="year">2023</span>
+                </div>
+            </a>
+
+            <a class="carousel-item" href="./productions/dead-dad-show/">
+                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <div class="carousel-caption">
+                    <span class="title">lenny.</span>
+                    <span class="theatre">Omnibus Theatre</span>
+                    <span class="year">2023</span>
+                </div>
+            </a>
+
+            <a class="carousel-item" href="./productions/two-tribes/">
+                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <div class="carousel-caption">
+                    <span class="title">lenny.</span>
+                    <span class="theatre">Omnibus Theatre</span>
+                    <span class="year">2023</span>
+                </div>
+            </a>
+
+            <a class="carousel-item" href="./engagements/all-of-them-dead/">
+                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <div class="carousel-caption">
+                    <span class="title">lenny.</span>
+                    <span class="theatre">Omnibus Theatre</span>
+                    <span class="year">2023</span>
+                </div>
+            </a>
+
+            <a class="carousel-item" href="./engagements/positive/">
+                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <div class="carousel-caption">
+                    <span class="title">lenny.</span>
+                    <span class="theatre">Omnibus Theatre</span>
+                    <span class="year">2023</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="carousel-nav">
+            <button class="carousel-btn prev" onclick="moveCarousel(-1)"><span class="arrow">&gt;</span></button>
+            <button class="carousel-btn next" onclick="moveCarousel(1)"><span class="arrow">&gt;</span></button>
+        </div>
+    </div>
+
+    <script>
+        let carouselIndex = 0;
+        function moveCarousel(direction) {
+            const track = document.getElementById('carouselTrack');
+            const items = track.children.length;
+            carouselIndex = (carouselIndex + direction + items) % items;
+            track.style.transform = `translateX(-${carouselIndex * 100}%)`;
+        }
+    </script>
+
+    <h2>Grey Castle Productions (GCP) is a new-writing company dedicated to platforming queer stories. Founded by
+        producer Simon Castle, the company develops and stages original new work which challenges expectations and
+        platforms bold LGBTQIA+ talent, on and off stage.
+    </h2>
+
+    R.H.L (Park Theatre, 2026, Production)
+
+    All of Them, Dead (UK Tour, 2026, Engagement Producing).
+
+    <form action="https://api.web3forms.com/submit  " method="POST">
+        <input type="hidden" name="access_key" value="175ad397-1b7e-4f05-b37b-8927a7713984">
+        <input type="hidden" name="redirect" value="./?thanks=true">
+        <input type="text" name="name" required placeholder="Name">
+        <input type="email" name="email" required placeholder="Email">
+        <textarea name="message" required placeholder="Message"></textarea>
+        <button id="submit" type="submit">Contact</button>
+    </form>
+
+    <p>
+        Simon Castle is an Off-West End Award nominated producer who specialises in telling queer stories. He is an
+        independent Theatre and Engagement Product, from Oxfordshire.
+    </p>
+
+    <p>
+        Simon extensively works in artist development, with significant producing and writing facilitation experience
+        with The Kiln Theatre, NT Connections, The Royal Shakespeare Company, The PappyShow, NT Connections, The North
+        Wall Arts Centre, house southeast, Creation Theatre and People’s Theatre Collective.
+    </p>
+
+    <a href="./contact" id="call-to-action">Work with us →</a>
+
+    <footer>
+        <p>Grey Castle Productions</p>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </footer>
 
 </body>
 
