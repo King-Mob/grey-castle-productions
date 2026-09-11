@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="landing">
     <a href="/" id="logo-link">
         <img id="logo" src="GCP.png" alt="all caps logo of Grey Castle Productions">
     </a>
@@ -51,8 +51,8 @@
                 <img src="./assets/small/itwgih-lead-text.jpg" alt="is the wifi good in hell?">
                 <div class="carousel-caption">
                     <span class="title">Is The Wifi Good In Hell?</span>
-                    <span class="theatre">Omnibus Theatre</span>
-                    <span class="year">2023</span>
+                    <span class="theatre">Edinburgh Fringe, Underbelly</span>
+                    <span class="year">2024</span>
                 </div>
             </a>
 
@@ -61,52 +61,52 @@
                 <div class="carousel-caption">
                     <span class="title">lenny.</span>
                     <span class="theatre">Omnibus Theatre</span>
-                    <span class="year">2023</span>
+                    <span class="year">2025</span>
                 </div>
             </a>
 
             <a class="carousel-item" href="./productions/rot-husk-loser/">
-                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <img src="./assets/small/rhl-lead-wide.jpg" alt="rot husk loser">
                 <div class="carousel-caption">
-                    <span class="title">lenny.</span>
-                    <span class="theatre">Omnibus Theatre</span>
-                    <span class="year">2023</span>
+                    <span class="title">Rot. Husk. Loser</span>
+                    <span class="theatre">Park Theatre</span>
+                    <span class="year">2026</span>
                 </div>
             </a>
 
             <a class="carousel-item" href="./productions/dead-dad-show/">
-                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <img src="./assets/small/dead-dad-show-lead.jpg" alt="dead dad show">
                 <div class="carousel-caption">
-                    <span class="title">lenny.</span>
-                    <span class="theatre">Omnibus Theatre</span>
-                    <span class="year">2023</span>
+                    <span class="title">Dead Dad Show</span>
+                    <span class="theatre">Soho Theatre/UK Tour</span>
+                    <span class="year">2024</span>
                 </div>
             </a>
 
             <a class="carousel-item" href="./productions/two-tribes/">
-                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <img src="./assets/small/two-tribes-lead.jpg" alt="two tribes">
                 <div class="carousel-caption">
-                    <span class="title">lenny.</span>
-                    <span class="theatre">Omnibus Theatre</span>
+                    <span class="title">Two Tribes</span>
+                    <span class="theatre">Leeds Playhouse & Theatre Royal Stratford East</span>
                     <span class="year">2023</span>
                 </div>
             </a>
 
             <a class="carousel-item" href="./engagements/all-of-them-dead/">
-                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <img src="./assets/small/all-of-them-dead-lead.jpg" alt="all of them dead">
                 <div class="carousel-caption">
-                    <span class="title">lenny.</span>
-                    <span class="theatre">Omnibus Theatre</span>
-                    <span class="year">2023</span>
+                    <span class="title">All Of Them, Dead</span>
+                    <span class="theatre">UK Tour</span>
+                    <span class="year">2025-2026</span>
                 </div>
             </a>
 
             <a class="carousel-item" href="./engagements/positive/">
-                <img src="./assets/small/lenny-lead.jpg" alt="lenny.">
+                <img src="./assets/small/positive-lead.jpg" alt="positive">
                 <div class="carousel-caption">
-                    <span class="title">lenny.</span>
-                    <span class="theatre">Omnibus Theatre</span>
-                    <span class="year">2023</span>
+                    <span class="title">Positive</span>
+                    <span class="theatre">Southwark Playhouse</span>
+                    <span class="year">2025</span>
                 </div>
             </a>
 
@@ -133,11 +133,29 @@
         platforms bold LGBTQIA+ talent, on and off stage.
     </h2>
 
-    R.H.L (Park Theatre, 2026, Production)
+    <div id="show-selection">
+        <a class="select-show" href="./productions/rot-husk-loser/">
+            <img src="./assets/small/rhl-lead-wide.jpg" alt="rot husk loser">
+            <div class="select-caption">
+                <span class="title">Rot. Husk. Loser</span>
+                <span class="title">(Production)</span>
+                <span class="theatre">Park Theatre</span>
+                <span class="year">2026</span>
+            </div>
+        </a>
+        <a class="select-show" href="./engagements/all-of-them-dead/">
+            <img src="./assets/small/all-of-them-dead-lead.jpg" alt="all of them dead">
+            <div class="select-caption" style="margin-top: -100px">
+                <span class="title">All Of Them, Dead</span>
+                <span class="title">(Engagement <br> Producing)</span>
+                <span class="theatre">UK Tour</span>
+                <span class="year">2025-2026</span>
+            </div>
+        </a>
+    </div>
 
-    All of Them, Dead (UK Tour, 2026, Engagement Producing).
-
-    <form action="https://api.web3forms.com/submit  " method="POST">
+    <form id="landing-form" action="https://api.web3forms.com/submit  " method="POST">
+        <h3>Get in touch</h3>
         <input type="hidden" name="access_key" value="175ad397-1b7e-4f05-b37b-8927a7713984">
         <input type="hidden" name="redirect" value="./?thanks=true">
         <input type="text" name="name" required placeholder="Name">
@@ -146,16 +164,22 @@
         <button id="submit" type="submit">Contact</button>
     </form>
 
-    <p>
-        Simon Castle is an Off-West End Award nominated producer who specialises in telling queer stories. He is an
-        independent Theatre and Engagement Product, from Oxfordshire.
-    </p>
+    <div id="bio">
 
-    <p>
-        Simon extensively works in artist development, with significant producing and writing facilitation experience
-        with The Kiln Theatre, NT Connections, The Royal Shakespeare Company, The PappyShow, NT Connections, The North
-        Wall Arts Centre, house southeast, Creation Theatre and People’s Theatre Collective.
-    </p>
+        <img id="landing-headshot" src="./assets/small/simon-c-headshot.jpg" alt="Simon Castle headshot">
+
+        <p class="landing-copy">
+            Simon Castle is an Off-West End Award nominated producer who specialises in telling queer stories. He is an
+            independent Theatre and Engagement Producer, from Oxfordshire.
+            <br>
+            <br>
+            Simon extensively works in artist development, with significant producing and writing facilitation
+            experience
+            with The Kiln Theatre, NT Connections, The Royal Shakespeare Company, The PappyShow, NT Connections, The
+            North
+            Wall Arts Centre, house southeast, Creation Theatre and People’s Theatre Collective.
+        </p>
+    </div>
 
     <a href="./contact" id="call-to-action">Work with us →</a>
 
