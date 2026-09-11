@@ -17,9 +17,6 @@ body {
   margin: 0;
   width: 100%;
   max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 a {
@@ -30,6 +27,12 @@ a {
 button {
   z-index: 2;
   position: relative;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel-wrapper {
@@ -300,11 +303,14 @@ h3 {
   z-index: 2;
 }
 
+#landing footer {
+  width: 90%;
+}
+
 footer {
   margin: 20px 5% 0px;
   border-top: 1px solid var(--text);
   padding: 5px 0px;
-  width: 90%;
 }
 
 @media screen and (min-width: 800px) {
