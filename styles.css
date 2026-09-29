@@ -114,6 +114,13 @@ button {
   display: inline-block;
   transform: rotate(180deg);
 }
+.carousel-wrapper {
+  touch-action: pan-y; /* horizontal swipes go to the carousel, vertical scrolling still works */
+  user-select: none;
+}
+.carousel-item img {
+  -webkit-user-drag: none; /* stops desktop browsers ghost-dragging the image */
+}
 
 h1 {
   font-family: "Outfit", sans-serif;
