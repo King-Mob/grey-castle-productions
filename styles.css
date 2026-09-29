@@ -531,7 +531,13 @@ textarea {
 #show-title {
   margin-top: 40px;
   color: #e0e2e5;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+#location.location {
+  padding: 0px;
+  margin: 0px 0px 20px;
+  font-style: italic;
 }
 
 #logline {
