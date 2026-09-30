@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -82,7 +83,7 @@
                 <img src="../../assets/small/itwgih-stage-3.jpg">
             </div>
             <div class="carousel-item">
-                <img src=".. /../assets/small/itwgih-stage-4.jpg">
+                <img src="../../assets/small/itwgih-stage-4.jpg">
             </div>
         </div>
 
@@ -92,14 +93,7 @@
         </div>
     </div>
 
-    <script>
-        let carouselIndex = 0;
-        function moveCarousel(direction) {
-            const track = document.getElementById('carouselTrack');
-            const items = track.children.length;
-            carouselIndex = (carouselIndex + direction + items) % items;
-            track.style.transform = `translateX(-${carouselIndex * 100}%)`;
-        }
+    <script src="../../carousel.js">
     </script>
 
     <div id="reviews" class="grid">
@@ -192,15 +186,15 @@
             <img src="../../assets/small/lyndon-headshot.jpeg">
             <h3><span class="role">Dev</span><br>Lyndon Chapman</h3>
         </div>
-
+        <h3><span class="role">Writer</span> <br> Lyndon Chapman</h3>
+        <h3><span class="role">Director</span> <br> Will Armstrong</h3>
+        <h3><span class="role">Producer</span> <br> Simon Castle</h3>
+        <h3><span class="role">Sound Designer</span> <br> Damian Pace</h3>
+        <h3><span class="role">Production Photography</span> <br> Rich Lakos</h3>
+        <h3><span class="role">Production Images</span> <br> Charles Flint & Michael Aiden</h3>
     </div>
 
-    <h3><span class="role">Writer</span> <br> Lyndon Chapman</h3>
-    <h3><span class="role">Director</span> <br> Will Armstrong</h3>
-    <h3><span class="role">Producer</span> <br> Simon Castle</h3>
-    <h3><span class="role">Set and Costume Designer</span> <br> Damian Pace</h3>
-    <h3><span class="role">Production Photography</span> <br> Rich Lakos</h3>
-    <h3><span class="role">Production Images</span> <br> Charles Flint & Michael Aiden</h3>
+
 
     <footer>
         <p>Grey Castle Productions</p>

@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -65,16 +66,16 @@
     <div class="carousel-wrapper">
         <div class="carousel-track" id="carouselTrack">
             <div class="carousel-item">
-                <img src="../../assets/small/two-tribes-lead.jpg">
+                <img src="../../assets/small/two-tribes-stage.jpg">
             </div>
             <div class="carousel-item">
                 <img src="../../assets/small/two-tribes-rehearsal.jpg">
             </div>
             <div class="carousel-item">
-                <img src="../../assets/small/two-tribes-stage.jpg">
+                <img src="../../assets/small/two-tribes-stage-2.jpg">
             </div>
             <div class="carousel-item">
-                <img src="../../assets/small/two-tribes-lead.jpg">
+                <img src="../../assets/small/two-tribes-stage-3.jpg">
             </div>
         </div>
 
@@ -84,14 +85,7 @@
         </div>
     </div>
 
-    <script>
-        let carouselIndex = 0;
-        function moveCarousel(direction) {
-            const track = document.getElementById('carouselTrack');
-            const items = track.children.length;
-            carouselIndex = (carouselIndex + direction + items) % items;
-            track.style.transform = `translateX(-${carouselIndex * 100}%)`;
-        }
+    <script src="../../carousel.js">
     </script>
 
     <div id="reviews" class="grid">
@@ -135,21 +129,22 @@
             <h3><span class="role">Big Steve</span><br>Joao Faulkner</h3>
         </div>
 
+        <h3><span class="role">Writer</span> <br> Simon Castle</h3>
+        <h3><span class="role">Director</span> <br> Rikki Beadle-Blair MBE</h3>
+        <h3><span class="role">Sound Design and Composer</span> <br> Isaac Stuart</h3>
+        <h3><span class="role">Stage Manager</span> <br> Emily-May Hyde</h3>
+        <h3><span class="role">Fight Director</span> <br> Sean Argue</h3>
+        <h3><span class="role">BSL Interpreter</span> <br> Keren Seabrook</h3>
+        <h3><span class="role">Captioning</span> <br> Talking Birds</h3>
+        <h3><span class="role">Prosthetics</span> <br> Red Girl FX</h3>
+        <h3><span class="role">Make-Up Assistant</span> <br> Hannah Stevens</h3>
+        <h3><span class="role">Videographer</span> <br> Wayne Sables</h3>
+        <h3><span class="role">Rehearsal Photographer</span> <br> Anthony Robling</h3>
+        <h3><span class="role">Show Photographer</span> <br> Cian O'Riain</h3>
+        <h3><span class="role">Production Image Photographer</span> <br> Rich Lakos</h3>
     </div>
 
-    <h3><span class="role">Writer</span> <br> Simon Castle</h3>
-    <h3><span class="role">Director</span> <br> Rikki Beadle-Blair MBE</h3>
-    <h3><span class="role">Sound Design and Composer</span> <br> Isaac Stuart</h3>
-    <h3><span class="role">Stage Manager</span> <br> Emily-May Hyde</h3>
-    <h3><span class="role">Fight Director</span> <br> Sean Argue</h3>
-    <h3><span class="role">BSL Interpreter</span> <br> Keren Seabrook</h3>
-    <h3><span class="role">Captioning</span> <br> Talking Birds</h3>
-    <h3><span class="role">Prosthetics</span> <br> Red Girl FX</h3>
-    <h3><span class="role">Make-Up Assistant</span> <br> Hannah Stevens</h3>
-    <h3><span class="role">Videographer</span> <br> Wayne Sables</h3>
-    <h3><span class="role">Rehearsal Photographer</span> <br> Anthony Robling</h3>
-    <h3><span class="role">Show Photographer</span> <br> Cian O'Riain</h3>
-    <h3><span class="role">Production Image Photographer</span> <br> Rich Lakos</h3>
+
 
     <footer>
         <p>Grey Castle Productions</p>

@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -97,14 +98,7 @@
         </div>
     </div>
 
-    <script>
-        let carouselIndex = 0;
-        function moveCarousel(direction) {
-            const track = document.getElementById('carouselTrack');
-            const items = track.children.length;
-            carouselIndex = (carouselIndex + direction + items) % items;
-            track.style.transform = `translateX(-${carouselIndex * 100}%)`;
-        }
+    <script src="../../carousel.js">
     </script>
 
     <div id="reviews" class="grid">
@@ -144,15 +138,18 @@
 
     </div>
 
-    <h3><span class="role">Writer</span> <br> Alfie Webster</h3>
-    <h3><span class="role">Director</span> <br> Sarah Stacey</h3>
-    <h3><span class="role">Producer</span> <br> Simon Castle</h3>
-    <h3><span class="role">Set and Costume Designer</span> <br> Mim Houghton</h3>
-    <h3><span class="role">Lighting Designer</span> <br> Gabriel Finn</h3>
-    <h3><span class="role">Sound Designer</span> <br> Raffaela Pancucci</h3>
-    <h3><span class="role">Stage Manager</span> <br> Emily-May Hyde</h3>
-    <h3><span class="role">Production and Show Photography</span> <br> Rich Lakos</h3>
-    <h3><span class="role">Videography</span> <br> Chewboy Productions</h3>
+    <div class="grid">
+        <h3><span class="role">Writer</span> <br> Alfie Webster</h3>
+        <h3><span class="role">Director</span> <br> Sarah Stacey</h3>
+        <h3><span class="role">Producer</span> <br> Simon Castle</h3>
+        <h3><span class="role">Set and Costume Designer</span> <br> Mim Houghton</h3>
+        <h3><span class="role">Lighting Designer</span> <br> Gabriel Finn</h3>
+        <h3><span class="role">Sound Designer</span> <br> Raffaela Pancucci</h3>
+        <h3><span class="role">Stage Manager</span> <br> Emily-May Hyde</h3>
+        <h3><span class="role">Production and Show Photography</span> <br> Rich Lakos</h3>
+        <h3><span class="role">Videography</span> <br> Chewboy Productions</h3>
+    </div>
+
 
     <footer>
         <p>Grey Castle Productions</p>

@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -92,14 +93,7 @@
         </div>
     </div>
 
-    <script>
-        let carouselIndex = 0;
-        function moveCarousel(direction) {
-            const track = document.getElementById('carouselTrack');
-            const items = track.children.length;
-            carouselIndex = (carouselIndex + direction + items) % items;
-            track.style.transform = `translateX(-${carouselIndex * 100}%)`;
-        }
+    <script src="../../carousel.js">
     </script>
 
     <div id="reviews" class="grid">
@@ -135,19 +129,20 @@
             <h3><span class="role">Lee & Officer</span><br>Shadrach Agozino</h3>
         </div>
 
+        <h3><span class="role">Writer</span> <br> Simon Castle</h3>
+        <h3><span class="role">Writer</span> <br> Somebody Jones</h3>
+        <h3><span class="role">Writer</span> <br> Nusrath Tapadar</h3>
+        <h3><span class="role">Director</span> <br> Guy Hodgkinson</h3>
+        <h3><span class="role">Assistant Director</span> <br> Holly Stevens</h3>
+        <h3><span class="role">Casting Director</span> <br> Amy Jackson</h3>
+        <h3><span class="role">Lighting Designer</span> <br> Benny Goodman</h3>
+        <h3><span class="role">Costume & Set Designer</span> <br> Debbie Duru</h3>
+        <h3><span class="role">Composer and Sound Designer</span> <br> Isaac Stuart</h3>
+        <h3><span class="role">Associate Producer</span> <br> Simon Castle, for Grey Castle Productions</h3>
+        <h3><span class="role">Venue</span> <br> Park Theatre</h3>
     </div>
 
-    <h3><span class="role">Writer</span> <br> Simon Castle</h3>
-    <h3><span class="role">Writer</span> <br> Somebody Jones</h3>
-    <h3><span class="role">Writer</span> <br> Nusrath Tapadar</h3>
-    <h3><span class="role">Director</span> <br> Guy Hodgkinson</h3>
-    <h3><span class="role">Assistant Director</span> <br> Holly Stevens</h3>
-    <h3><span class="role">Casting Director</span> <br> Amy Jackson</h3>
-    <h3><span class="role">Lighting Designer</span> <br> Benny Goodman</h3>
-    <h3><span class="role">Costume & Set Designer</span> <br> Debbie Duru</h3>
-    <h3><span class="role">Composer and Sound Designer</span> <br> Isaac Stuart</h3>
-    <h3><span class="role">Associate Producer</span> <br> Simon Castle, for Grey Castle Productions</h3>
-    <h3><span class="role">Venue</span> <br> Park Theatre</h3>
+
 
     <footer>
         <p>Grey Castle Productions</p>
