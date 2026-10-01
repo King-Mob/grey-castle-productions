@@ -385,7 +385,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 5%;
+  margin-top: -5px;
 }
 
 #awards,
@@ -396,7 +396,7 @@ p {
 }
 
 #awards p {
-  padding: 0px;
+  padding: 10px 5%;
   margin: 10px 0px;
 }
 
@@ -404,6 +404,15 @@ p {
   width: 100%;
   max-width: 400px;
   margin: 10px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  #awards img {
+    max-width: 500px;
+    margin: 0px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
 }
 
 ul {
