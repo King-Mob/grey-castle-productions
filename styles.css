@@ -35,6 +35,10 @@ button {
   align-items: center;
 }
 
+#landing-carousel {
+  margin-top: 75px;
+}
+
 .carousel-wrapper {
   position: relative;
   max-width: 900px;
@@ -119,6 +123,27 @@ button {
 }
 .carousel-item img {
   -webkit-user-drag: none; /* stops desktop browsers ghost-dragging the image */
+}
+#landing-carousel .carousel-mobile {
+  display: none;
+}
+
+#landing-carousel .carousel-desktop {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  #landing-carousel .carousel-item {
+    aspect-ratio: 4/5;
+  }
+
+  #landing-carousel .carousel-mobile {
+    display: block;
+  }
+
+  #landing-carousel .carousel-desktop {
+    display: none;
+  }
 }
 
 h1 {
