@@ -242,7 +242,7 @@ section {
   font-family: "Quicksand";
   flex-direction: column;
   color: white;
-  padding: 37px 0px 0px 0px;
+  padding: 45px 0px 0px 0px;
   align-items: center;
   backdrop-filter: blur(2px);
 }
@@ -327,11 +327,10 @@ h3 {
 
 #logo {
   height: 60px;
-  margin-top: 5px;
+  margin: 5px;
 }
 
 #logo-link {
-  width: 50%;
   max-width: 250px;
   display: block;
   position: fixed;
